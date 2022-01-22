@@ -8,9 +8,9 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-IGDEV_SCRIPTS_PATH=/usr0/igdev/grponly/sw/tools/scripts
+#IGDEV_SCRIPTS_PATH=/usr0/igdev/grponly/sw/tools/scripts
 
-PATH=$PATH:$IGDEV_SCRIPTS_PATH
+#PATH=$PATH:$IGDEV_SCRIPTS_PATH
 
 PROMPT_COMMAND='set_prompt'
 
@@ -32,7 +32,7 @@ fi
 }   # end main
 
 
-
+# TODO change formatting
 set_prompt () {     # customize bash prompt
     Last_Command=$? # Must come first!
     Blue='\[\e[01;34m\]'
